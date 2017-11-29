@@ -3,7 +3,7 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Hugh "Dutch" Kipp.
 """
 
 ########################################################################
@@ -22,7 +22,6 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 import rosegraphics as rg
 import random
-
 
 def main():
     """
@@ -105,7 +104,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 2.
+# done: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
