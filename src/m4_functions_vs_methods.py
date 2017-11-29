@@ -82,6 +82,7 @@ def main():
     turtle3()
     try_methods()
     try_functions()
+    try_methods_and_functions()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -195,7 +196,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # done: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -244,7 +245,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # done: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -254,6 +255,21 @@ def try_methods_and_functions():
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
+    last = rg.SimpleTurtle()
+    last.pen = rg.Pen('blue', 5)
+
+    last.backward(150)
+    last.speed = 1
+    draw_many_squares(last, 2, 100, 30)
+
+    last.speed = 5
+    last.pen = rg.Pen('red', 5)
+    draw_many_squares(last, 8, 300, 60)
+
+    last.pen = rg.Pen('black', 3)
+    last.backward(200)
+    last.draw_circle(30)
+    draw_many_squares(last, 1, 50, 0)
 
 
 # ----------------------------------------------------------------------
