@@ -81,6 +81,7 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
     try_methods()
+    try_functions()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -205,6 +206,9 @@ def try_functions():
     # HINT: see   jump_and_move_turtle   above.
     #
     ####################################################################
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
 
 def try_methods_and_functions():
