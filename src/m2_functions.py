@@ -8,7 +8,8 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+#
+# done: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -23,6 +24,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 import rosegraphics as rg
 import random
 
+
 def main():
     """
     Makes a TurtleWindow,
@@ -36,6 +38,8 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle4()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -102,6 +106,22 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    bobbeh = rg.SimpleTurtle()
+    bobbeh.pen = rg.Pen('orange', 8)
+    bobbeh.backward(100)
+
+
+def turtle5():
+    jack = rg.SimpleTurtle()
+    jack.pen = rg.Pen('blue', 12)
+
+    jill = rg.SimpleTurtle()
+    jill.pen = rg.Pen('pink', 8)
+
+    jack.forward(200)
+    jill.backward(300)
+
 ########################################################################
 #
 # done: 2.
@@ -136,7 +156,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# done: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -166,7 +186,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# done: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -182,7 +202,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# done: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
@@ -221,4 +241,6 @@ def turtle3():
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+
 main()
