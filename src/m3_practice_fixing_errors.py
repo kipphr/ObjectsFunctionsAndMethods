@@ -6,7 +6,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 """  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
-# TODO: 2.
+# done: 2.
 #   Locate the syntax (notation) errors in this file
 #   by looking for red underlines.
 #
