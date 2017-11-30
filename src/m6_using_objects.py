@@ -140,7 +140,6 @@ def lines():
             Point(110.5, 150.0)
             110.5
             150.0
-
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
