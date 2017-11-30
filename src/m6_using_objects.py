@@ -16,8 +16,8 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     two_circles()
+    circle_and_rectangle()
 
-    window.close_on_mouse_click()
 
 def two_circles():
     """
@@ -36,10 +36,18 @@ def two_circles():
     # Put a statement in   main   to test this function
     #    (by calling this function).
     # ------------------------------------------------------------------
-    window = rg.RoseWindow()
-    circle1 = rg.Circle(0, 30)
-    circle2 = rg.Circle(0, 45)
+    window = rg.RoseWindow(400, 400)
+    center = rg.Point(200, 200)
 
+    circle1 = rg.Circle(center, 50)
+    circle2 = rg.Circle(center, 25)
+    circle2.fill_color = 'red'
+
+    circle1.attach_to(window)
+    circle2.attach_to(window)
+
+    window.render()
+    window.close_on_mouse_click()
 
 
 def circle_and_rectangle():
@@ -74,7 +82,7 @@ def circle_and_rectangle():
            150.0
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # done: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -82,6 +90,35 @@ def circle_and_rectangle():
     # IMPORTANT: Use the DOT TRICK to guess the names of the relevant
     #       instance variables for outline thickness, etc.
     # ------------------------------------------------------------------
+    window = rg.RoseWindow(500, 500)
+
+    center = rg.Point (100, 250)
+    circle = rg.Circle(center, 25)
+    circle.attach_to(window)
+    circle.fill_color = 'blue'
+
+    point1 = rg.Point(300, 300)
+    point2 = rg.Point(400, 200)
+    rectangle = rg.Rectangle(point1, point2)
+    rectangle.attach_to(window)
+
+    window.render()
+    window.close_on_mouse_click()
+
+    print(' ')
+    print('circle info:')
+    print('outline thickness: ', 1)
+    print('fill color: blue')
+    print('center: ', center)
+    print('center x: 100')
+    print('center y: 250')
+    print(' ')
+    print('rectangle info:')
+    print('outline thickness: ', 1)
+    print('fill color: none')
+    print('center: ', rectangle.get_center())
+    print('center x: 350')
+    print('center y: 250')
 
 
 def lines():

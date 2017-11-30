@@ -50,7 +50,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #                center, fill color, outline color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            adds a delay
+#            draws the objects attached to window and allows for a delay to be added
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
 #            when you want to control when the code runs another piece of code. it's necessary because
@@ -106,9 +106,7 @@ def example2():
     # and hence are not drawn, until you ATTACH it to a window.
     # ------------------------------------------------------------------
     point1.attach_to(window)
-    window.render(5)
     point2.attach_to(window)
-    window.render(5)
     point3.attach_to(window)
     # ------------------------------------------------------------------
     # And they still are not DRAWN until you RENDER the window.
